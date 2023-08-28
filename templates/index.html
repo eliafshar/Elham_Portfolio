@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="./static/css/style.css">
+	<link rel="stylesheet" href="./static/css/slick.css">
+	<link rel="shortcut icon" href="./static/images/favicon.ico">
+	<title>Home | Personal Portfolio</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    </head>
+    <body>
+    	
+	<!-- Navigation -->
+	<nav class="site-navigation">
+		<div class="logo-container">
+    		<img src="./static/images/ss2.svg" alt="site logo" class="logo">
+    </div>
+           <div class="site-navigation-inner site-container">
+           </div>
+    		<div class="main-navigation">
+				<ul id="main-menu" class="main-navigation__ul">
+					<!-- Make them to be scrolled -->
+					<li><a href="#Home">Home</a></li>
+					<li><a href="#About">About</a></li>					
+					<li><a href="#Projects">Projects</a></li>									
+					<li><a href="#Testimonials">Testimonials</a></li>					
+					<li><a href="#Contact">Contact</a></li>	
+				</ul>
+			</div>
+			        <div id="myBtn" class="burger-container" onclick="myFunction(this)">
+			        <!-- Adding "Menu" word with menu bar -->
+                    <span class="menu-word">Menu</span>
+                    <div class="move-bars">
+  					<div class="bars bar1"></div>
+  					<div class="bars bar2"></div>
+  					<div class="bars bar3"></div>
+  					</div>
+			</div>
+			<script>
+				function myFunction(x) {
+					x.classList.toggle("change");
+				}
+			</script>		
+	</nav>
+	<!-- Navigation end -->
+
+	<!-- Top banner -->
+	<section class="fh5co-top-banner">
+		<div id="Home" class="top-banner__inner site-container">
+			<div class="top-banner__image">
+				<img src="./static/images/about-me-Elham.jpg" alt="author image"></div> 
+			<div class="top-banner__text">
+				<div class="top-banner__text-up">
+					<span class="brand-span">Hello! I'm ELHAM</span>
+				</div>
+				<div class="top-banner__text-down">
+					<span class="brand-span2">Computer Engineer, Art Lover, Piano Player</span>
+				</div>
+				<p>Someone who harmonizes the realms of knowledge, creativity, and design in her life...</p>
+				<a href="#" class="brand-button" id="get-started-btn">Get Started</a>
+			</div>
+		</div>
+	</section>
+	<!-- Top banner end -->
+
+	<!-- About me -->
+	<section class="fh5co-about-me">
+		<div class="about-me-inner site-container">
+			<article class="portfolio-wrapper">
+				<div class="portfolio__img">
+					<img src="./static/images/about-me-Elham4.jpg" class="about-me__profile" alt="about me profile picture">
+				</div>
+				<div class="portfolio__bottom">
+					<div class="portfolio__name">
+						<span>E</span>
+						<h2 class="universal-h2">lham Afshar</h2>
+					</div>
+					<p>Elham is a Programmer, Colored Pencil Illustrator and a Piano Player.</p>
+				</div>
+			</article>
+			<div class="about-me__text">
+				<div class="about-me-slider">
+					<div id="About" class="about-me-single-slide"> 
+                        <!-- Fading action added for About me plus CSS code -->
+						<h2 id="about-me-heading" class="universal-h2 universal-h2-bckg">About me</h2>
+						<p><span>W</span>ith six years of experience at the largest telecom company, she has developed a strong foundation in problem-solving, analytical thinking, design, and teamwork. However, her true passion lies in programming and software development. As she embarks on a new career path, she is excited to leverage her skills and experience to create innovative solutions.</p>
+						<p class="p-white">Go next</p>
+					</div>
+					
+					<div class="about-me-single-slide">
+						<h2 class="universal-h2 universal-h2-bckg">Artistic & Collaborative Skills</h2>
+						<p><span>A</span>longside her technical expertise, she brings a creative flair nurtured through her artistic pursuits as well as a deep appreciation for music as a piano player. She is a dedicated, self-learner, and thrives in collaborative environments. She is eager to contribute her software design and development skills to make a meaningful impact in the programming field.</p>
+						<h4>Elham Afshar</h4>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="about-me-bckg"></div>
+	</section>
+	<!-- About me end -->
+
+	<!-- Books and CD -->
+	<section class="fh5co-books">
+		<div id="Projects" class="site-container">
+			<h2 class="universal-h2 universal-h2-bckg">Projects</h2>
+			<div class="books">
+<div class="single-book">
+    <a href="{{ url_for('project') }}" class="single-book__img">
+        <img src="{{ url_for('static', filename='images/password-checker3.jpg') }}" alt="single book and cd">
+        <div class="single-book_download">
+            <img src="{{ url_for('static', filename='images/download.svg') }}" alt="book image">
+        </div>
+    </a>
+    <a href="{{ url_for('project') }}" class="single-book__link">
+        <h4 class="single-book__title">Password Checker</h4>
+    </a>
+</div>
+		</div>
+	</section>
+	<!-- Books and CD end -->
+
+	<!-- Counter -->
+	<div class="fh5co-counter counters">
+		<div class="counter-inner site-container">
+			<div class="single-count">
+				<span class="count" data-count="3">0</span>
+				<div class="single-count__text">
+					<i class="fas fa-certificate"></i> <!--add icons-->
+					<p>Certifications</p>
+				</div>
+			</div>
+			<div class="single-count">
+				<span class="count" data-count="5">0</span>
+				<div class="single-count__text">
+					<i class="fas fa-code"></i> <!--add icons-->
+					<p>Programming Projects</p>
+				</div>
+			</div>
+			<div class="single-count">
+				<span class="count" data-count="6">0</span>
+				<div class="single-count__text">
+					<i class="fas fa-calendar"></i> <!--add icons-->
+					<p>Years of Experience</p>
+				</div>
+			</div>
+			<div class="single-count">
+				<span class="count" data-count="8">0</span>
+				<div class="single-count__text">
+					<i class="fas fa-trophy"></i> <!--add icons-->
+					<p>Honors & Awards</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Counter -->
+
+	<!-- Quotes -->
+	<section class="fh5co-quotes">
+		<div class="site-container">
+			<div id="Testimonials" class="about-me-slider">
+				<div>
+					<h2 class="universal-h2 universal-h2-bckg">What People Are Saying</h2>
+					<p>“Pudding croissant cake candy canes fruitcake sweet roll pastry gummies sugar plum. Tart pastry danish soufflé donut bear claw chocolate cake marshmallow chupa chups. Jelly danish gummi bears cake donut powder chocolate cake. Bonbon soufflé lollipop biscuit dragée jelly-o. Wafer pastry pudding tiramisu chocolate bar croissant cake. Pie caramels gummies danish.”</p>
+					<img src="./static/images/quotes.svg" alt="quotes svg">
+					<h4>David Dixon</h4>
+					<p>Reader</p>
+				</div>
+				<div>
+					<h2 class="universal-h2 universal-h2-bckg">What People Are Saying 2</h2>
+					<p>“Pudding croissant cake candy canes fruitcake sweet roll pastry gummies sugar plum. Tart pastry danish soufflé donut bear claw chocolate cake marshmallow chupa chups. Jelly danish gummi bears cake donut powder chocolate cake. Bonbon soufflé lollipop biscuit dragée jelly-o. Wafer pastry pudding tiramisu chocolate bar croissant cake. Pie caramels gummies danish.”</p>
+					<img src="./static/images/quotes.svg" alt="quotes svg">
+					<h4>David Dixon</h4>
+					<p>Reader</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Quotes end -->
+
+	<!-- Social -->
+	<section class="fh5co-social">
+		<div class="site-container">
+			<div class="social">
+				<!--<h5>Follow me!!</h5>-->
+				<div class="social-icons">
+                    <a href="https://www.linkedin.com/in/elham-afshar-b572ab241/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://instagram.com/elhamafshar_?igshid=OGQ5ZDc2ODk2ZA==" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://github.com/eliafshar" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="mailto:elhamafshar@live.com"><i class="fas fa-envelope"></i></a>
+                </div>
+			</div>
+		</div>
+	</section>
+	<!-- Social -->
+
+	<!-- Footer -->
+	<footer class="site-footer">
+		<div class="site-container">
+			<div class="footer-inner">
+				<div class="footer-info">
+					<div class="footer-info__left">
+					</div>
+					<div id="Contact" class="footer-info__right">
+					</div>
+				</div>
+<div class="footer-contact-form">
+    <h5>Contact Form</h5>
+    <form action="/submit_form" method="post" class="contact-form">
+        <div class="contact-form__input">
+            <input type="text" name="name" placeholder="Name" required> <!-- Add required attribute -->
+            <input type="email" name="email" placeholder="Email" required> <!-- Add required attribute -->
+        </div>
+        <textarea name="message" placeholder="Enter your message" required></textarea> <!-- Add required attribute -->
+        <input type="submit" name="submit" value="Submit" class="submit-button">
+    </form>
+</div>
+
+			</div>
+		</div>
+		<div class="footer-bottom">
+			<div class="site-container footer-bottom-inner">
+				<p>© 2023 PORTFOLIO | Design by ELHAM AFSHAR | All rights Reserved.</p>
+			</div>
+		</div>
+	</footer>
+	<!-- Footer end -->
+
+	<!-- Scripts -->
+	<script src="./static/js/jquery.min.js"></script>
+	<script src="./static/js/slick.min.js"></script>
+	<script src="./static/js/main.js"></script>
+</body>
+</html>

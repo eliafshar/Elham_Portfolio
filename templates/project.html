@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | Password Checker</title>
+    <!-- Add any CSS links or stylesheets here -->
+    <link rel="stylesheet" href="./static/css/project.css">
+	<link rel="stylesheet" href="./static/css/slick.css">
+	<link rel="shortcut icon" href="./static/images/favicon.ico">
+</head>
+<body>
+    <header>
+        <!-- Your header content goes here (e.g., navigation bar, logo, etc.) -->
+         <nav class="site-navigation">
+         	<div class="site-navigation home">
+            <ul>
+                <li><a href="/">Home</a></li>
+                <!-- Add more navigation items here -->
+            </ul>
+            </div>
+        </nav>
+
+
+    <div class="project-background"></div>
+
+<!-- Top banner start -->
+		<section class="project-top-banner">
+            <h1>Passowrd Checker</h1>
+            <div class="project-cover">
+                <img src="{{ url_for('static', filename='images/hello-world2.jpg') }}" alt="Screenshot 1">
+            </div>
+        </section>
+<!-- Top banner end -->
+
+    </header>
+    <main>
+        <section class="project-details">
+        	<h1>Project Description</h1>
+            <p>
+                I developed a robust password checker application designed to enhance online security by leveraging a comprehensive dataset of compromised passwords. This project employs an API that evaluates the vulnerability of passwords and informs users about their security status.</p> 
+                <p>Through the use of cryptographic hashing and API queries, the application ensures privacy while assessing the exposure of passwords. The program takes advantage of a widely-recognized hashing algorithm to convert passwords into unique cryptographic representations before querying the API. The returned data offers insights into the number of times a password has appeared in security breaches.
+                The project's script systematically interacts with the API, orchestrating the query, hashing, and matching processes, ensuring user convenience.</p> 
+                <p>Upon analyzing the results, the application provides immediate feedback, enabling users to take proactive steps to safeguard their digital identities. This password checker significantly contributes to online safety by empowering users to make informed decisions about their password choices, ultimately enhancing their cybersecurity posture.
+            </p>
+            <!-- Add more details about your project here -->
+        </section>
+
+        <section class="project-screenshots">
+            <h3>Running the Password Checker:</h3>
+            <p>This screenshot showcases the command-line interface of the Password Checker tool in action. The user runs the code by the command of "python3 checkmypassword.py" and enters their passwords. Then, the tool checks them against a database of compromised passwords.</p>
+            <div class="screenshot">
+                <img src="{{ url_for('static', filename='images/screenshot1.jpg') }}" alt="Screenshot 1">
+            </div>
+            <h3>Password Security Results:</h3>
+            <p>In this screenshot, the tool displays the security results for each entered password. It indicates whether each password has been compromised and provides recommendations for changing passwords if necessary.</p>
+            <div class="screenshot">
+                <img src="{{ url_for('static', filename='images/screenshot2.jpg') }}" alt="Screenshot 2">
+            </div>
+            <h3>Secure Password Verification:</h3>
+            <p>This screenshot demonstrates secure password verification in which passwords are not displayed; instead, ordinal numbers are used.</p>
+            <div class="screenshot">
+             <img src="{{ url_for('static', filename='images/screenshot3.jpg') }}" alt="Screenshot 3">
+            </div>
+            <h3>Password Hacking Alert:</h3>
+            <p>This screenshot highlights the successful verification of secure passwords. The tool identifies passwords that have not been compromised and assures users of their security. Also, demonstrates the tool's ability to detect compromised passwords. It alerts users when a password has been found in data breaches, prompting them to take immediate action to update their credentials.</p>
+            <div class="screenshot">
+             <img src="{{ url_for('static', filename='images/screenshot4.jpg') }}" alt="Screenshot 4">
+            </div>
+            <h3>Password Management Tips:</h3>
+            <p>This screenshot provides valuable password management tips based on the tool's results. It emphasizes best practices for maintaining a secure online presence and protecting sensitive accounts.</p>
+            <div class="screenshot">
+            <img src="{{ url_for('static', filename='images/screenshot5.jpg') }}" alt="Screenshot 5">
+            </div>
+            <h3>Multi-Password Validation:</h3>
+            <p>Demonstrating the tool's efficiency, this screenshot shows multiple passwords being validated simultaneously. Users can conveniently input a list of passwords for assessment.</p>
+            <div class="screenshot">
+			 <img src="{{ url_for('static', filename='images/screenshot6.jpg') }}" alt="Screenshot 6">
+            </div>
+            <!-- Add more screenshots or media related to your project here -->
+        </section>
+    </main>
+
+        <!-- Your footer content goes here (e.g., copyright information, contact details, etc.) -->
+        <!-- Footer -->
+	<footer class="site-footer">
+		<div class="site-container">
+			<div class="footer-inner">
+				<div class="footer-info">
+				</div>
+<div class="footer-contact-form">
+    <h5>Contact Form</h5>
+    <form action="/submit_form" method="post" class="contact-form">
+        <div class="contact-form__input">
+            <input type="text" name="name" placeholder="Name" required> <!-- Add required attribute -->
+            <input type="email" name="email" placeholder="Email" required> <!-- Add required attribute -->
+        </div>
+        <textarea name="message" placeholder="Enter your message" required></textarea> <!-- Add required attribute -->
+        <input type="submit" name="submit" value="Submit" class="submit-button">
+    </form>
+</div>
+			</div>
+		</div>
+		<div class="footer-bottom">
+			<div class="site-container footer-bottom-inner">
+				<p>© 2023 PORTFOLIO | Design by ELHAM AFSHAR | All rights Reserved.</p>
+			</div>
+		</div>
+	</footer>
+	<!-- Footer end -->
+
+    <!-- Add any JavaScript links or scripts here -->
+	<script src="./static/js/jquery.min.js"></script>
+	<script src="./static/js/slick.min.js"></script>
+	<script src="./static/js/main.js"></script>
+</body>
+</html>

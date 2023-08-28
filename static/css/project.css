@@ -1,0 +1,289 @@
+.site-container {
+  width: 1115px;
+  margin: 0 auto; }
+  @media (max-width: 1250px) {
+    .site-container {
+      width: 90%; } }
+
+.site-navigation {
+  position: absolute;
+  top: 2%;
+  left: 44.3%;
+  width: 100%;
+  z-index: 2; }
+
+.site-navigation .home a {
+  top: 2%;
+  color: #fed053; 
+  font-family: 'Courier New', monospace; 
+  font-size: 18px; 
+  font-weight: bold;
+  text-decoration: none; /* Remove underline */
+  cursor: pointer;
+}
+.site-navigation .home a:hover {
+        color: #fff; }
+
+.site-navigation .home li {
+  list-style: none;
+  margin: 0; /* Remove the default bullet point marker */
+  padding: 0;
+}
+/*----------------------------ul for thank you--------------------*/
+.site-navigation .thankyou {
+  position: absolute;
+  top: 10%;
+  left: -41.8%;
+  width: 110%;
+  z-index: 2; 
+  margin-top: 206px
+  }
+
+.site-navigation .thankyou a {
+  top: 2%;
+  color: #fed053; 
+  font-family: 'Courier New', monospace; 
+  font-size: 18px; 
+  font-weight: bold;
+  text-decoration: none;
+  cursor: pointer;
+  opacity: 0; /* Set initial opacity to 0 */
+  transition: opacity 2s; /* Add transition for opacity */
+}
+
+.site-navigation .thankyou a:hover {
+  color: #fff;
+}
+
+.site-navigation .thankyou a.show {
+  opacity: 1; /* Change opacity to 1 to fade in */
+}
+
+.site-navigation .thankyou li {
+  list-style: none;
+  margin: 0; /* Remove the default bullet point marker */
+  padding: 0;
+}
+/*----------------------------ul for thank you--------------------*/
+.project-background {
+  /* Your background styling */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #050D14;
+  opacity: 0.9;
+  z-index: -1; /* Set a negative z-index to place it behind other content */
+}
+
+/*-----------------------------top banner---------------------------*/
+
+.project-top-banner{
+  display: inline-block;
+  color: #fff;
+  font-family: 'Courier New', monospace;
+  letter-spacing: 0px;
+  margin-top: 30px;
+  margin-left: 30px;
+}
+.project-top-banner h1{
+  display: inline-block;
+  color: #fed053;
+  font-family: 'Courier New', monospace;
+  letter-spacing: 0px;
+  margin-top: 30px;
+  margin-left: 3px;
+}
+
+.project-top-banner .project-cover {
+  position: relative;
+  top: 5px;
+  right: 0px;
+  display: flex;
+  align-items: flex-end;
+  background-position: center bottom; /* Center the background image horizontally and move it to the bottom */
+  background-size: cover;
+}
+/*-----------------------------top banner---------------------------*/
+
+/*-----------------------------Project detail---------------------------*/
+.project-details {
+  display: inline-grid;
+  color: #fff;
+  font-family: 'Courier New', monospace;
+  letter-spacing: 0px;
+  margin-top: 30px;
+  margin-left: 30px;
+  margin-bottom: 40px;
+  line-height: 1.5; /* Adjust this value to change the line spacing */
+}
+
+.project-details h1{
+  display: inline-grid;
+  color: #fed053;
+  font-family: 'Courier New', monospace;
+  letter-spacing: 0px;
+  margin-top: 30px;
+  margin-left: 3px;
+  margin-bottom: 1px;
+}
+/*-----------------------------Project detail---------------------------*/
+/*-----------------------------------thanyou details------------------------*/
+.thankyou-details {
+  display: inline-grid;
+  color: #fff;
+  font-family: 'Courier New', monospace;
+  letter-spacing: 0px;
+  margin-top: 18px;
+  margin-left: 30px;
+  margin-bottom: 0px;
+  line-height: 1.5; /* Adjust this value to change the line spacing */
+  font-size: 21px;
+}
+
+/* Define animation for character-by-character typing */
+.animate-text p,
+.animate-text h3 {
+  overflow: hidden; /* Hide overflowed characters */
+  border-right: 3.00em solid transparent; /* Add a transparent border */
+  animation: none; /* Disable the default animation */
+  opacity: 0;
+}
+
+
+/*-----------------------------------thanyou details------------------------*/
+/*-----------------------------Screen shots---------------------------*/
+.project-screenshots{
+  display: block;
+  font-size: 18px;
+  color: #fff;
+  font-family: 'Courier New', monospace;
+  letter-spacing: 0px;
+  margin-top: 20px;
+  margin-left: 30px;
+  z-index: 1;
+}
+
+.project-screenshots h3{
+  display: block;
+  font-size: 18px;
+  color: #fed053;
+  font-family: 'Courier New', monospace;
+  letter-spacing: 0px;
+  margin-top: 20px;
+  margin-left: 3px;
+  z-index: 1;
+}
+.screenshot {
+  position: relative;
+  top: -10px;
+  right: 0px;
+  display: flex;
+  align-items: flex-end;
+  background-position: center bottom; /* Center the background image horizontally and move it to the bottom */
+  background-size: cover;
+}
+
+/*-----------------------------Screen shots---------------------------*/
+.site-footer {
+  padding-top: 120px;
+  background-color: #343434; }
+  @media (max-width: 1250px) {
+    .site-footer {
+      padding-top: 60px; } }
+
+.footer-inner {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 95px; }
+  .footer-inner h5 {
+    margin-bottom: 30px;
+    font-size: 20px;
+    letter-spacing: 2px;
+    color: #fff; 
+  font-family: 'Courier New', monospace;}
+  @media (max-width: 1250px) {
+    .footer-inner {
+      padding-bottom: 50px;
+      flex-direction: column;
+      align-items: center; } }
+
+.footer-contact-form {
+  width: 50%; }
+  .footer-contact-form .contact-form__input {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px; }
+    .footer-contact-form .contact-form__input input {
+      width: 40%;
+      padding: 20px;
+      border: 1px solid #404040;
+      background-color: #282828;
+      color: #fed053;
+      font-family: 'Courier New', monospace; }
+      .footer-contact-form .contact-form__input input::placeholder {
+        color: #aaa; 
+        font-weight: bold;}
+      @media (max-width: 1250px) {
+        .footer-contact-form .contact-form__input input {
+          width: 45%; } }
+      @media (max-width: 520px) {
+        .footer-contact-form .contact-form__input input {
+          width: 100%; } }
+  .footer-contact-form textarea {
+    box-sizing: border-box;
+    height: 90px;
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #404040;
+    background-color: #282828;
+    resize: none;
+    color: #fed053; 
+  font-family: 'Courier New', monospace;}
+  .footer-contact-form .submit-button {
+    padding: 15px 40px;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: bold;
+    color: #777;
+    background-color: #fed053;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    font-family: 'Courier New', monospace; }
+    .footer-contact-form .submit-button:hover {
+      background-color: #777; }
+  @media (max-width: 1250px) {
+    .footer-contact-form {
+      width: 100%; } }
+
+.footer-bottom {
+  padding: 25px 0;
+  background-color: #2d2d2d; }
+
+.footer-bottom-inner {
+  display: flex;
+  justify-content: space-between; }
+  .footer-bottom-inner p {
+    color: #777; }
+  .footer-bottom-inner a {
+    color: #fed053;
+    text-decoration: none;
+    transition: 0.3s ease; }
+    .footer-bottom-inner a:hover {
+      color: #777; }
+  .footer-bottom-inner .footer-bottom__img img {
+    margin-right: 25px; }
+    .footer-bottom-inner .footer-bottom__img img:last-child {
+      margin-right: 0; }
+  @media (max-width: 992px) {
+    .footer-bottom-inner {
+      flex-direction: column;
+      align-items: center; }
+      .footer-bottom-inner p {
+        font-size: 14px;
+        margin-bottom: 20px; } }
+        

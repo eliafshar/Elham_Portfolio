@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <!-- Add any CSS links or stylesheets here -->
+    <link rel="stylesheet" href="./static/css/project.css">
+	<link rel="stylesheet" href="./static/css/slick.css">
+	<link rel="shortcut icon" href="./static/images/favicon.ico">
+</head>
+<body>
+<div class="project-background"></div>
+
+<!-- Footer start -->
+    <!-- ... (your existing HTML code) ... -->
+
+<div class="site-navigation">
+    <div class="thankyou">
+        <ul>
+            <li><a href="/">Home</a></li>
+            <!-- Add more navigation items here -->
+        </ul>
+    </div>
+</div>
+
+<div class="thankyou-details">
+    <div class="thankyou-details animate-text"><h3>Thank You, {{ name }}!</h3></div>
+    <div class="thankyou-details animate-text"><p>I appreciate you reaching out. Your message has been received, and I'll be in touch shortly.</p></div>
+    <div class="thankyou-details animate-text"><p>In the meantime, feel free to explore more of my portfolio:</p></div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+  // Add the 'show' class to the 'Home' link after a delay of 4 seconds
+  document.addEventListener('DOMContentLoaded', function() {
+    setTimeout(function() {
+      var homeLink = document.querySelector('.site-navigation .thankyou a[href="/"]');
+      if (homeLink) {
+        homeLink.classList.add('show');
+      }
+    }, 7500); // Delay in milliseconds
+  });
+</script>
+
+
+<script> $(document).ready(function() {
+    // Function to animate text appearing character by character
+    function animateText(element) {
+      var text = element.text();
+      element.empty();
+      var characters = text.split("");
+      $.each(characters, function(i, char) {
+        var delay = 37 * i; // Adjust this delay for speed
+        setTimeout(function() {
+          element.append(char);
+        }, delay);
+      });
+    }
+
+    // Select and animate each div with the class "animate-text"
+    var firstSentenceDelay = 0; // No delay for the first sentence
+    var secondSentenceDelay = 1200; // Delay for the second sentence
+    var thirdSentenceDelay = 5100; // Delay for the third sentence
+
+    var elements = $('.animate-text');
+    animateText(elements.eq(0)); // Animate the first element immediately
+
+    setTimeout(function() {
+      animateText(elements.eq(1)); // Animate the second element after the specified delay
+    }, secondSentenceDelay);
+
+    setTimeout(function() {
+      animateText(elements.eq(2)); // Animate the third element after the specified delay
+    }, thirdSentenceDelay);
+});
+
+</script>
+		
+	<!-- Footer end -->
+    <!-- Add any JavaScript links or scripts here -->
+
+
+	<script src="./static/js/jquery.min.js"></script>
+	<script src="./static/js/slick.min.js"></script>
+	<script src="./static/js/main.js"></script>
+</body>
+</html>
+				
